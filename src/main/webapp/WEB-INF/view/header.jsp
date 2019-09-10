@@ -75,6 +75,38 @@
   
   </script>
   
+  
+ 
+              
+             <div id="fb-root" ></div>
+      <script>
+  
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    
+  </script>
+
+      <!-- Your customer chat code -->
+      <div  class="fb-customerchat"
+        attribution=setup_tool
+        page_id="104600124252728"
+  theme_color="#67b868"
+  logged_in_greeting="Hello welcome to bookingpetz.com connect with us in facebook"
+  logged_out_greeting="Thanks for contacting us at bookingpetz.com">
+      </div>
+ 
 
         <c:choose>
                                     <c:when test="${user != null}">
@@ -290,3 +322,14 @@ s.src="https://salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.p
         </div>-->
 </div>
 
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '9ea972b5bf3cd2eb000933230c8d54a162181872';
+window.smartsupp||(function(d) {
+        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+        c.type='text/javascript';c.charset='utf-8';c.async=true;
+        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
