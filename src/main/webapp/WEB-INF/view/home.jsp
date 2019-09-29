@@ -58,6 +58,10 @@
     </head>
 
     <body>
+        
+
+    <!--  <iframe id="ifrm" frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="http://suryapilefoundation.com/bkpapi/BookingpetzBeta-master/payment4/index.php?price=<%= request.getParameter("price") %>&bookingid=<%= request.getParameter("bookingid") %>"  style="border: none !important; margin: 0px !important; padding: 0px !important; height:555px;"></iframe> -->
+      
         <jsp:include page="header.jsp"></jsp:include>
 
             <!-- Home -->
